@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel Institute of Professionals — Thika</title>
+  <meta name="description" content="Excel Institute of Professionals (E.I.P), Murathe Plaza, Thika Town — Computer, Accounting, Graphics & Accountancy (ATD/Foundation/Intermediate/Advanced) courses. Weekend & online classes available."/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              50:  '#f4f7fb',
+              100: '#e9eff6',
+              200: '#c9d6e8',
+              300: '#9fb6d4',
+              400: '#6f90ba',
+              500: '#3f6aa1',
+              600: '#234f85',
+              700: '#163a67',
+              800: '#0f2b4e',
+              900: '#0b1f3a',
+            },
+            accent: '#2dd4bf'
+          },
+          boxShadow: {
+            soft: '0 10px 25px rgba(0,0,0,.12)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Fine‑tuned scrollbar for long syllabi */
+    .nice-scroll::-webkit-scrollbar{height:8px;width:8px}
+    .nice-scroll::-webkit-scrollbar-thumb{background:#234f85;border-radius:9999px}
+  </style>
+</head>
+
+<body class="bg-white text-navy-900 selection:bg-navy-700 selection:text-white">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-navy-100">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="h-10 w-10 rounded-xl bg-navy-900 text-white grid place-items-center font-black">EIP</div>
+        <div>
+          <p class="font-extrabold leading-4 tracking-wide text-navy-900">Excel Institute</p>
+          <p class="text-xs text-navy-600/70">of Professionals — Thika</p>
+        </div>
+      </a>
+      <ul class="hidden md:flex items-center gap-6 font-medium text-navy-700">
+        <li><a class="hover:text-navy-900" href="#about">About</a></li>
+        <li><a class="hover:text-navy-900" href="#programs">Programs</a></li>
+        <li><a class="hover:text-navy-900" href="#accountancy">Accountancy</a></li>
+        <li><a class="hover:text-navy-900" href="#fees">Fees</a></li>
+        <li><a class="hover:text-navy-900" href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="hidden md:inline-flex items-center gap-2 rounded-xl bg-navy-900 text-white px-4 py-2 shadow-soft hover:bg-navy-800 transition">Enroll Now</a>
+      <button id="menuBtn" class="md:hidden inline-flex size-10 items-center justify-center rounded-xl border border-navy-200">
+        <span class="sr-only">Open menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-navy-100 bg-white">
+      <div class="max-w-7xl mx-auto px-4 py-3 grid gap-3 text-navy-700">
+        <a href="#about" class="py-2">About</a>
+        <a href="#programs" class="py-2">Programs</a>
+        <a href="#accountancy" class="py-2">Accountancy</a>
+        <a href="#fees" class="py-2">Fees</a>
+        <a href="#contact" class="py-2">Contact</a>
+        <a href="#contact" class="inline-flex items-center justify-center rounded-xl bg-navy-900 text-white px-4 py-2">Enroll Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-navy-900 via-navy-800 to-navy-900"></div>
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-white">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="reveal">
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Excel Institute of Professionals</h1>
+          <p class="mt-4 text-navy-100/90 max-w-prose">Located at <span class="font-semibold">Murathe Plaza, 3rd Floor (Kisii Road), Thika Town</span>. We offer market‑ready training in Computer Packages, Accounting, Graphics, Statistical Packages, and full Accountancy pathways.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#programs" class="rounded-xl bg-white text-navy-900 font-semibold px-5 py-3 hover:bg-navy-50">View Programs</a>
+            <a href="#contact" class="rounded-xl border border-white/40 px-5 py-3">Weekend & Online classes available</a>
+          </div>
+        </div>
+        <div class="relative h-72 sm:h-96 reveal">
+          <!-- Floating badge cards -->
+          <div class="absolute right-4 top-4 bg-white/10 backdrop-blur rounded-2xl p-4 border border-white/20">
+            <p class="font-semibold">Hands‑on Learning</p>
+            <p class="text-sm text-white/80">Small classes • Practical labs</p>
+          </div>
+          <div class="absolute left-2/3 -translate-x-1/2 bottom-6 bg-white/10 backdrop-blur rounded-2xl p-4 border border-white/20">
+            <p class="font-semibold">Flexible Schedules</p>
+            <p class="text-sm text-white/80">Full‑time • Part‑time • Weekend</p>
+          </div>
+          <svg class="absolute inset-0 w-full h-full" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="0.9"/>
+              </linearGradient>
+            </defs>
+            <circle id="orb1" cx="150" cy="180" r="70" fill="url(#g)" opacity="0.15" />
+            <circle id="orb2" cx="380" cy="220" r="110" fill="#ffffff" opacity="0.08" />
+            <circle id="orb3" cx="260" cy="100" r="40" fill="#2dd4bf" opacity="0.12" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <svg class="block text-white" viewBox="0 0 1440 120" preserveAspectRatio="none"><path fill="white" d="M0,64L60,74.7C120,85,240,107,360,106.7C480,107,600,85,720,85.3C840,85,960,107,1080,112C1200,117,1320,107,1380,101.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"/></svg>
+  </section>
+
+  <!-- ABOUT QUICK FACTS -->
+  <section id="about" class="py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-6">
+      <div class="reveal rounded-2xl border border-navy-100 p-6 shadow-soft">
+        <h3 class="font-bold text-lg text-navy-800">Industry‑aligned Training</h3>
+        <p class="text-navy-700/80 mt-2">Practical skills in Microsoft Office, Accounting systems, Graphics, SPSS/STATA/Python, and professional Accountancy units.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-navy-100 p-6 shadow-soft">
+        <h3 class="font-bold text-lg text-navy-800">Affordable Fees</h3>
+        <p class="text-navy-700/80 mt-2">Computer Packages full course at <span class="font-semibold">KES 6,000</span>. Accounting/Graphics packages from <span class="font-semibold">KES 4,000</span>.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-navy-100 p-6 shadow-soft">
+        <h3 class="font-bold text-lg text-navy-800">Flexible Learning</h3>
+        <p class="text-navy-700/80 mt-2">Full‑time & part‑time options. Weekend and online classes arranged on request.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" class="py-12 sm:py-16 bg-navy-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="reveal text-3xl font-extrabold text-navy-900">Computer, Accounting, Graphics & Statistical Packages</h2>
+      <p class="reveal mt-2 text-navy-700/80">From the brochure — core modules and fees.</p>
+
+      <div class="mt-8 grid lg:grid-cols-2 gap-6">
+        <!-- Computer Packages -->
+        <article class="reveal rounded-2xl bg-white border border-navy-100 p-6 shadow-soft">
+          <header class="flex items-center justify-between gap-4">
+            <h3 class="text-xl font-bold text-navy-800">Computer Packages (Microsoft Office Suite)</h3>
+            <span class="inline-flex items-center rounded-full bg-navy-900 text-white text-sm px-3 py-1">KES 6,000 • Full course</span>
+          </header>
+          <div class="mt-4 grid sm:grid-cols-2 gap-4 text-navy-700/90">
+            <ul class="list-disc list-inside space-y-1">
+              <li>Introduction to Computing</li>
+              <li>Windows Experience</li>
+              <li>Word Processing</li>
+              <li>Spreadsheets</li>
+              <li>Database Management</li>
+              <li>Presentations</li>
+              <li>Internet Experience</li>
+              <li>Basic Computer Maintenance</li>
+            </ul>
+            <ul class="list-disc list-inside space-y-1">
+              <li>MS Word</li>
+              <li>MS Excel</li>
+              <li>MS Access</li>
+              <li>MS PowerPoint</li>
+              <li>MS Publisher</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Accounting Packages -->
+        <article class="reveal rounded-2xl bg-white border border-navy-100 p-6 shadow-soft">
+          <header class="flex items-center justify-between gap-4">
+            <h3 class="text-xl font-bold text-navy-800">Accounting Packages</h3>
+            <span class="inline-flex items-center rounded-full bg-navy-900 text-white text-sm px-3 py-1">KES 4,000 • each</span>
+          </header>
+          <ul class="mt-4 grid sm:grid-cols-2 gap-x-6 gap-y-2 text-navy-700/90 list-disc list-inside">
+            <li>QuickBooks</li>
+            <li>Sage</li>
+            <li>Pastel</li>
+            <li>Tally Prime</li>
+          </ul>
+        </article>
+
+        <!-- Graphics -->
+        <article class="reveal rounded-2xl bg-white border border-navy-100 p-6 shadow-soft">
+          <header class="flex items-center justify-between gap-4">
+            <h3 class="text-xl font-bold text-navy-800">Graphics</h3>
+            <span class="inline-flex items-center rounded-full bg-navy-900 text-white text-sm px-3 py-1">KES 4,000 • each</span>
+          </header>
+          <ul class="mt-4 grid sm:grid-cols-2 gap-x-6 gap-y-2 text-navy-700/90 list-disc list-inside">
+            <li>Adobe Photoshop</li>
+            <li>CorelDRAW</li>
+            <li>Adobe Illustrator</li>
+          </ul>
+        </article>
+
+        <!-- Statistical Packages -->
+        <article class="reveal rounded-2xl bg-white border border-navy-100 p-6 shadow-soft">
+          <header class="flex items-center justify-between gap-4">
+            <h3 class="text-xl font-bold text-navy-800">Statistical Packages</h3>
+          </header>
+          <div class="mt-4 grid sm:grid-cols-3 gap-3">
+            <div class="rounded-xl border border-navy-100 p-4 text-center">
+              <p class="font-semibold">STATA</p>
+              <p class="text-sm text-navy-700/80">KES 8,000</p>
+            </div>
+            <div class="rounded-xl border border-navy-100 p-4 text-center">
+              <p class="font-semibold">SPSS</p>
+              <p class="text-sm text-navy-700/80">KES 8,000</p>
+            </div>
+            <div class="rounded-xl border border-navy-100 p-4 text-center">
+              <p class="font-semibold">Python</p>
+              <p class="text-sm text-navy-700/80">KES 15,000</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="reveal mt-6 text-sm text-navy-700/70">We train both full‑time and part‑time; weekend and online classes are arranged.</p>
+    </div>
+  </section>
+
+  <!-- ACCOUNTANCY PATHWAY -->
+  <section id="accountancy" class="py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="reveal text-3xl font-extrabold text-navy-900">Accountancy Syllabi</h2>
+      <p class="reveal mt-2 text-navy-700/80">From the brochure — a semester per level (three units per sitting).</p>
+
+      <div class="mt-8 grid lg:grid-cols-2 gap-6">
+        <!-- ATD I / II / III -->
+        <article class="reveal rounded-2xl border border-navy-100 p-6 shadow-soft bg-white">
+          <h3 class="text-xl font-bold text-navy-800">ATD (I • II • III)</h3>
+          <div class="mt-4 grid sm:grid-cols-3 gap-4 text-sm text-navy-800 nice-scroll">
+            <div>
+              <p class="font-semibold">ATD I</p>
+              <ul class="list-disc list-inside space-y-1 mt-1">
+                <li>Intro to Financial Accounting</li>
+                <li>Intro to Law & Ethics</li>
+                <li>Entrepreneurship & Communication</li>
+                <li>Information Communication Skills</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold">ATD II</p>
+              <ul class="list-disc list-inside space-y-1 mt-1">
+                <li>Financial Accounting</li>
+                <li>Principles of Management</li>
+                <li>Business Math & Statistics</li>
+                <li>Principles of Taxation</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold">ATD III</p>
+              <ul class="list-disc list-inside space-y-1 mt-1">
+                <li>Principles of Economics</li>
+                <li>Fundamentals of Management Accounting</li>
+                <li>Fundamentals of Finance</li>
+                <li>Principles of Auditing</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Foundation / Intermediate / Advanced -->
+        <article class="reveal rounded-2xl border border-navy-100 p-6 shadow-soft bg-white">
+          <h3 class="text-xl font-bold text-navy-800">Foundation • Intermediate • Advanced Levels</h3>
+          <div class="mt-4 grid sm:grid-cols-3 gap-4 text-sm text-navy-800">
+            <div>
+              <p class="font-semibold">Foundation</p>
+              <ul class="list-disc list-inside space-y-1 mt-1">
+                <li>Financial Accounting</li>
+                <li>Communication Skills</li>
+                <li>Intro to Law & Governance</li>
+                <li>Economics</li>
+                <li>Quantitative Analysis</li>
+                <li>Information Communication Skills</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold">Intermediate</p>
+              <ul class="list-disc list-inside space-y-1 mt-1">
+                <li>Company Law</li>
+                <li>Financial Management</li>
+                <li>Financial Reporting & Analysis</li>
+                <li>Audit & Assurance</li>
+                <li>Management Accounting</li>
+                <li>Public Finance & Taxation</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold">Advanced</p>
+              <ul class="list-disc list-inside space-y-1 mt-1">
+                <li>Leadership & Management</li>
+                <li>Advanced Financial Reporting & Analysis</li>
+                <li>Advanced Financial Management</li>
+                <li>Advanced Taxation</li>
+                <li>Advanced Audit & Assurance</li>
+                <li>Advanced Management Accounting</li>
+                <li>Advanced Public Finance Management</li>
+                <li>Business Data Analytics (Practical)</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEES & ENROLL -->
+  <section id="fees" class="py-12 sm:py-16 bg-navy-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-8 items-center">
+        <div class="reveal">
+          <h2 class="text-3xl font-extrabold">Fees Summary</h2>
+          <ul class="mt-4 space-y-2 text-white/90">
+            <li>Computer Packages: <span class="font-semibold">KES 6,000</span> (full course)</li>
+            <li>Accounting Packages: <span class="font-semibold">KES 4,000</span> (each)</li>
+            <li>Graphics Packages: <span class="font-semibold">KES 4,000</span> (each)</li>
+            <li>STATA & SPSS: <span class="font-semibold">KES 8,000</span> each</li>
+            <li>Python (Statistics): <span class="font-semibold">KES 15,000</span></li>
+            <li>Accountancy levels (per semester): <span class="font-semibold">KES 20,000</span></li>
+            <li>Admission fee (one‑off): <span class="font-semibold">KES 1,000</span></li>
+          </ul>
+          <p class="mt-4 text-sm text-white/80">Note: Information summarized from the provided brochures; fees may change. Kindly confirm during admission.</p>
+        </div>
+        <div class="reveal rounded-2xl bg-white text-navy-900 p-6 shadow-soft">
+          <h3 class="text-xl font-bold">Quick Enquiry</h3>
+          <form class="mt-4 grid gap-3" onsubmit="event.preventDefault(); alert('Thanks! We\'ll contact you shortly.');">
+            <input class="rounded-xl border border-navy-200 px-4 py-3" type="text" placeholder="Full name" required>
+            <input class="rounded-xl border border-navy-200 px-4 py-3" type="tel" placeholder="Phone number" required>
+            <input class="rounded-xl border border-navy-200 px-4 py-3" type="email" placeholder="Email (optional)">
+            <select class="rounded-xl border border-navy-200 px-4 py-3">
+              <option selected>Program of interest</option>
+              <option>Computer Packages</option>
+              <option>Accounting Packages</option>
+              <option>Graphics</option>
+              <option>Statistical Packages</option>
+              <option>ATD / Accountancy Levels</option>
+            </select>
+            <textarea class="rounded-xl border border-navy-200 px-4 py-3" rows="3" placeholder="Your message"></textarea>
+            <button class="rounded-xl bg-navy-900 text-white px-4 py-3 hover:bg-navy-800">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal grid lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-navy-100 p-6 shadow-soft">
+          <h3 class="font-bold text-lg text-navy-800">Visit Us</h3>
+          <p class="mt-2 text-navy-700/80">Murathe Plaza, 3rd Floor (Kisii Road), Thika Town, Kenya</p>
+        </div>
+        <div class="rounded-2xl border border-navy-100 p-6 shadow-soft">
+          <h3 class="font-bold text-lg text-navy-800">Call</h3>
+          <p class="mt-2"><a class="text-navy-700 hover:text-navy-900" href="tel:+254729517899">0729 517 899</a> • <a class="text-navy-700 hover:text-navy-900" href="tel:+254721678446">0721 678 446</a></p>
+        </div>
+        <div class="rounded-2xl border border-navy-100 p-6 shadow-soft">
+          <h3 class="font-bold text-lg text-navy-800">Email</h3>
+          <p class="mt-2"><a class="text-navy-700 hover:text-navy-900" href="mailto:eipcollegethika@gmail.com">eipcollegethika@gmail.com</a></p>
+          <a href="https://wa.me/254729517899" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-green-500 text-white px-4 py-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 32 32" fill="currentColor"><path d="M19.11 17.63c-.28-.14-1.63-.8-1.88-.88-.25-.09-.43-.14-.62.14-.18.28-.71.88-.87 1.06-.16.18-.32.2-.6.07-.28-.14-1.16-.43-2.2-1.39-.81-.72-1.36-1.6-1.52-1.88-.16-.28-.02-.43.12-.57.12-.12.28-.32.41-.48.14-.16.18-.27.28-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.06-.22-.53-.45-.46-.62-.46h-.53c-.18 0-.46.07-.7.34-.25.28-.95.93-.95 2.27 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.57.65.2 1.24.17 1.71.1.52-.08 1.63-.66 1.86-1.31.23-.65.23-1.2.16-1.31-.07-.11-.25-.18-.53-.32z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-navy-100 py-8 text-center text-sm text-navy-600">
+    <p>© <span id="yr"></span> Excel Institute of Professionals — Thika. All rights reserved.</p>
+  </footer>
+
+  <!-- GSAP: try local first, then CDN fallback -->
+  <script id="gsapLocal" src="gsap.min.js"></script>
+  <script>
+     function initAnimations() {
+    // ✅ All your GSAP animations go here
+    gsap.to('#orb1', { y: -12, duration: 1.5, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+gsap.to('#orb2', { y: 10, x: -8, duration: 2, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+gsap.to('#orb3', { y: -8, x: 6, duration: 1.3, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          gsap.fromTo(entry.target, { y: 32, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: 'power2.out' });
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    gsap.fromTo('header', { y: -24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out' });
+  }
+
+  // ✅ Try to load local GSAP
+  const localScript = document.createElement('script');
+  localScript.src = 'gsap.min.js';
+  localScript.onload = initAnimations; // run after GSAP loads
+  localScript.onerror = () => {
+    console.warn('⚠️ Local gsap.min.js not found — using CDN fallback.');
+    const cdn = document.createElement('script');
+    cdn.src = 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js';
+    cdn.onload = initAnimations;
+    document.head.appendChild(cdn);
+  };
+  document.head.appendChild(localScript);
+  </script>
+</body>
+</html>
